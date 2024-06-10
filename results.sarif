@@ -39,7 +39,7 @@
             {
               "physicalLocation": {
                 "artifactLocation": {                                                                                                                                                        
-                  "uri": ""                                                                   
+                  "uri": "main.blub"                                                                   
                 },                                                                            
                 "region": {                                                                                                                                                                  
                   "startLine": 1,                                                             
