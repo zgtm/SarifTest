@@ -1,0 +1,59 @@
+{              
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [                       
+    {                                    
+      "tool": {
+        "driver": {
+          "name": "cifuzz",
+          "rules": [
+            {
+              "id": "meeep",
+              "shortDescription": {                                                                                                                                                          
+                "text": "shortdesc"                                                                                                                                                          
+              },                                                                                                                                                                             
+              "fullDescription": {
+                "text": "fulldesc"
+              },             
+              "help": {
+                "text": "help"
+              },
+              "properties": {      
+                "id": "propid",      
+                "kind": "kind",
+                "name": "name",
+                "problem.severity": "prob-server",                                            
+                "security-severity": "2.7"
+              }                    
+            }                   
+          ]      
+        }      
+      },     
+      "results": [
+        {                         
+          "ruleId": "meeep",             
+          "message": {
+            "text": "message"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {                                                                                                                                                        
+                  "uri": ""                                                                   
+                },                                                                            
+                "region": {                                                                                                                                                                  
+                  "startLine": 0,                                                             
+                  "startColumn": 0,
+                  "endColumn": 0
+                }
+              }
+            }   
+          ],    
+          "partialFingerprints": {
+            "primaryLocationLineHash": ""
+          }    
+        }          
+      ]                    
+    }               
+  ]          
+}
