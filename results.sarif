@@ -1,59 +1,151 @@
-{              
+{
   "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
   "version": "2.1.0",
-  "runs": [                       
-    {                                    
+  "runs": [
+    {
       "tool": {
         "driver": {
           "name": "cifuzz",
           "rules": [
             {
-              "id": "meeep",
-              "shortDescription": {                                                                                                                                                          
-                "text": "shortdesc"                                                                                                                                                          
-              },                                                                                                                                                                             
+              "id": "heap_buffer_overflow",
+              "shortDescription": {
+                "text": "shortdesc"
+              },
               "fullDescription": {
                 "text": "fulldesc"
-              },             
+              },
               "help": {
                 "text": "help"
               },
-              "properties": {      
-                "id": "propid",      
+              "properties": {
+                "id": "propid",
                 "kind": "kind",
                 "name": "name",
-                "problem.severity": "prob-server",                                            
+                "problem.severity": "prob-server",
                 "security-severity": "2.7"
-              }                    
-            }                   
-          ]      
-        }      
-      },     
+              }
+            },
+            {
+              "id": "shift_exponent",
+              "shortDescription": {
+                "text": "shortdesc"
+              },
+              "fullDescription": {
+                "text": "fulldesc"
+              },
+              "help": {
+                "text": "help"
+              },
+              "properties": {
+                "id": "propid",
+                "kind": "kind",
+                "name": "name",
+                "problem.severity": "prob-server",
+                "security-severity": "2.7"
+              }
+            }
+          ]
+        }
+      },
       "results": [
-        {                         
-          "ruleId": "meeep",             
+        {
+          "ruleId": "heap_buffer_overflow",
           "message": {
             "text": "message"
           },
           "locations": [
             {
               "physicalLocation": {
-                "artifactLocation": {                                                                                                                                                        
-                  "uri": "main.blub"                                                                   
-                },                                                                            
-                "region": {                                                                                                                                                                  
-                  "startLine": 1,                                                             
-                  "startColumn": 1,
-                  "endColumn": 1
+                "artifactLocation": {
+                  "uri": "src/explore_me2.cpp"
+                },
+                "region": {
+                  "startLine": 18,
+                  "endLine": 18,
+                  "startColumn": 11,
+                  "endColumn": 11
                 }
               }
-            }   
-          ],    
+            }
+          ],
           "partialFingerprints": {
-            "primaryLocationLineHash": ""
-          }    
-        }          
-      ]                    
-    }               
-  ]          
+            "primaryLocationLineHash": "dangerous_peafowl"
+          }
+        },
+        {
+          "ruleId": "shift_exponent",
+          "message": {
+            "text": "message"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/explore_me2.cpp"
+                },
+                "region": {
+                  "startLine": 13,
+                  "endLine": 13,
+                  "startColumn": 11,
+                  "endColumn": 11
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "elegant_polecat"
+          }
+        },
+        {
+          "ruleId": "heap_buffer_overflow",
+          "message": {
+            "text": "message"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/explore_me.cpp"
+                },
+                "region": {
+                  "startLine": 18,
+                  "endLine": 18,
+                  "startColumn": 11,
+                  "endColumn": 11
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "zealous_shark"
+          }
+        },
+        {
+          "ruleId": "shift_exponent",
+          "message": {
+            "text": "message"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/explore_me.cpp"
+                },
+                "region": {
+                  "startLine": 13,
+                  "endLine": 13,
+                  "startColumn": 11,
+                  "endColumn": 11
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "odd_starfish"
+          }
+        }
+      ]
+    }
+  ]
 }
