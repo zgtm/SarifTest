@@ -42,9 +42,9 @@
                   "uri": ""                                                                   
                 },                                                                            
                 "region": {                                                                                                                                                                  
-                  "startLine": 0,                                                             
-                  "startColumn": 0,
-                  "endColumn": 0
+                  "startLine": 1,                                                             
+                  "startColumn": 1,
+                  "endColumn": 1
                 }
               }
             }   
