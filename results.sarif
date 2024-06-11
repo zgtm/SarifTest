@@ -5,7 +5,7 @@
     {
       "tool": {
         "driver": {
-          "name": "cifuzz",
+          "name": "cifuz",
           "rules": [
             {
               "id": "heap_buffer_overflow",
