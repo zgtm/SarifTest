@@ -52,7 +52,7 @@
         {
           "ruleId": "heap_buffer_overflow",
           "message": {
-            "text": "A heap buffer overflow is a type of a memory corruption vulnerability that is widely used for different types of attacks. A successful heap buffer overflow attack can be used to read sensitive data in memory, or write and execute code in it."
+            "text": "Heap Buffer Overflow found in line 18, column 11"
           },
           "locations": [
             {
@@ -76,7 +76,7 @@
         {
           "ruleId": "shift_exponent",
           "message": {
-            "text": "A shift operation has been detected which is equal or greater than the left hand side of the operation, or the left hand side is negative."
+            "text": "Invalid Shift found in line 13, column 11"
           },
           "locations": [
             {
@@ -100,7 +100,7 @@
         {
           "ruleId": "heap_buffer_overflow",
           "message": {
-            "text": "A heap buffer overflow is a type of a memory corruption vulnerability that is widely used for different types of attacks. A successful heap buffer overflow attack can be used to read sensitive data in memory, or write and execute code in it."
+            "text": "Heap Buffer Overflow found in line 18, column 11"
           },
           "locations": [
             {
@@ -124,7 +124,7 @@
         {
           "ruleId": "shift_exponent",
           "message": {
-            "text": "A shift operation has been detected which is equal or greater than the left hand side of the operation, or the left hand side is negative."
+            "text": "Invalid Shift found in line 13, column 11"
           },
           "locations": [
             {
