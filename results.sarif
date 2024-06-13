@@ -16,7 +16,7 @@
                 "text": "fulldesc"
               },
               "help": {
-                "text": "A programmer can follow the following guidelines to help avoid buffer overflows: When using functions which copy a given size from memory, ensure that the target buffer has a size large enough for the amount of data to be copied. Always make sure to access the buffer within its defined boundaries, checking on each access."
+                "text": "A heap buffer overflow is a type of a memory corruption vulnerability that is widely used for different types of attacks. A successful heap buffer overflow attack can be used to read sensitive data in memory, or write and execute code in it.\n\nA programmer can follow the following guidelines to help avoid buffer overflows: When using functions which copy a given size from memory, ensure that the target buffer has a size large enough for the amount of data to be copied. Always make sure to access the buffer within its defined boundaries, checking on each access."
               },
               "properties": {
                 "id": "propid",
@@ -35,7 +35,7 @@
                 "text": "fulldesc"
               },
               "help": {
-                "text": "Make sure the shift operation does not exceed the size of its target or causes an overflow"
+                "text": "A shift operation has been detected which is equal or greater than the left hand side of the operation, or the left hand side is negative.\n\nMake sure the shift operation does not exceed the size of its target or causes an overflow"
               },
               "properties": {
                 "id": "propid",
