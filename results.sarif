@@ -10,39 +10,39 @@
             {
               "id": "heap_buffer_overflow",
               "shortDescription": {
-                "text": "shortdesc"
+                "text": "Heap Buffer Overflow"
               },
               "fullDescription": {
                 "text": "fulldesc"
               },
               "help": {
-                "text": "help"
+                "text": "A programmer can follow the following guidelines to help avoid buffer overflows: When using functions which copy a given size from memory, ensure that the target buffer has a size large enough for the amount of data to be copied. Always make sure to access the buffer within its defined boundaries, checking on each access."
               },
               "properties": {
                 "id": "propid",
                 "kind": "kind",
                 "name": "name",
-                "problem.severity": "prob-server",
-                "security-severity": "2.7"
+                "problem.severity": "Critical",
+                "security-severity": "9.0"
               }
             },
             {
               "id": "shift_exponent",
               "shortDescription": {
-                "text": "shortdesc"
+                "text": "Invalid Shift"
               },
               "fullDescription": {
                 "text": "fulldesc"
               },
               "help": {
-                "text": "help"
+                "text": "Make sure the shift operation does not exceed the size of its target or causes an overflow"
               },
               "properties": {
                 "id": "propid",
                 "kind": "kind",
                 "name": "name",
-                "problem.severity": "prob-server",
-                "security-severity": "2.7"
+                "problem.severity": "Low",
+                "security-severity": "2.0"
               }
             }
           ]
@@ -52,7 +52,7 @@
         {
           "ruleId": "heap_buffer_overflow",
           "message": {
-            "text": "message"
+            "text": "A heap buffer overflow is a type of a memory corruption vulnerability that is widely used for different types of attacks. A successful heap buffer overflow attack can be used to read sensitive data in memory, or write and execute code in it."
           },
           "locations": [
             {
@@ -76,7 +76,7 @@
         {
           "ruleId": "shift_exponent",
           "message": {
-            "text": "message"
+            "text": "A shift operation has been detected which is equal or greater than the left hand side of the operation, or the left hand side is negative."
           },
           "locations": [
             {
@@ -100,7 +100,7 @@
         {
           "ruleId": "heap_buffer_overflow",
           "message": {
-            "text": "message"
+            "text": "A heap buffer overflow is a type of a memory corruption vulnerability that is widely used for different types of attacks. A successful heap buffer overflow attack can be used to read sensitive data in memory, or write and execute code in it."
           },
           "locations": [
             {
@@ -124,7 +124,7 @@
         {
           "ruleId": "shift_exponent",
           "message": {
-            "text": "message"
+            "text": "A shift operation has been detected which is equal or greater than the left hand side of the operation, or the left hand side is negative."
           },
           "locations": [
             {
