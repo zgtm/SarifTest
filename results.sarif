@@ -9,39 +9,47 @@
           "rules": [
             {
               "id": "heap_buffer_overflow",
+              "name": "Heap Buffer Overflow",
               "shortDescription": {
                 "text": "Heap Buffer Overflow"
               },
               "fullDescription": {
-                "text": "fulldesc"
+                "text": "A heap buffer overflow is a type of a memory corruption vulnerability that is widely used for different types of attacks. A successful heap buffer overflow attack can be used to read sensitive data in memory, or write and execute code in it."
               },
               "help": {
                 "text": "A heap buffer overflow is a type of a memory corruption vulnerability that is widely used for different types of attacks. A successful heap buffer overflow attack can be used to read sensitive data in memory, or write and execute code in it.\n\nA programmer can follow the following guidelines to help avoid buffer overflows: When using functions which copy a given size from memory, ensure that the target buffer has a size large enough for the amount of data to be copied. Always make sure to access the buffer within its defined boundaries, checking on each access."
               },
               "properties": {
-                "id": "propid",
-                "kind": "kind",
-                "name": "name",
-                "problem.severity": "Critical",
+                "id": "",
+                "kind": "",
+                "name": "",
+                "problem": {
+                  "severity": "error"
+                },
+                "problem.severity": "error",
                 "security-severity": "9.0"
               }
             },
             {
               "id": "shift_exponent",
+              "name": "Invalid Shift",
               "shortDescription": {
                 "text": "Invalid Shift"
               },
               "fullDescription": {
-                "text": "fulldesc"
+                "text": "A shift operation has been detected which is equal or greater than the left hand side of the operation, or the left hand side is negative."
               },
               "help": {
                 "text": "A shift operation has been detected which is equal or greater than the left hand side of the operation, or the left hand side is negative.\n\nMake sure the shift operation does not exceed the size of its target or causes an overflow"
               },
               "properties": {
-                "id": "propid",
-                "kind": "kind",
-                "name": "name",
-                "problem.severity": "Low",
+                "id": "",
+                "kind": "",
+                "name": "",
+                "problem": {
+                  "severity": "warning"
+                },
+                "problem.severity": "warning",
                 "security-severity": "2.0"
               }
             }
