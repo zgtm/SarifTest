@@ -158,7 +158,21 @@
           "message": {
             "text": "Invalid Shift found"
           },
-          "locations": [],
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "unknown"
+                },
+                "region": {
+                  "startLine": 1,
+                  "endLine": 1,
+                  "startColumn": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
           "partialFingerprints": {
             "primaryLocationLineHash": "even_starfish"
           }
