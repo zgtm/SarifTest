@@ -8,30 +8,30 @@
           "name": "cifuzz",
           "rules": [
             {
-              "id": "heap_buffer_overflow",
-              "name": "Heap Buffer Overflow",
+              "id": "unknown_rule",
+              "name": "Unspecified Finding",
               "shortDescription": {
-                "text": "Heap Buffer Overflow"
+                "text": "Unspecified Finding"
               },
               "fullDescription": {
-                "text": "A heap buffer overflow is a type of a memory corruption vulnerability that is widely used for different types of attacks. A successful heap buffer overflow attack can be used to read sensitive data in memory, or write and execute code in it."
+                "text": "No further information available"
               },
               "help": {
-                "text": "A heap buffer overflow is a type of a memory corruption vulnerability that is widely used for different types of attacks. A successful heap buffer overflow attack can be used to read sensitive data in memory, or write and execute code in it.\n\nA programmer can follow the following guidelines to help avoid buffer overflows: When using functions which copy a given size from memory, ensure that the target buffer has a size large enough for the amount of data to be copied. Always make sure to access the buffer within its defined boundaries, checking on each access."
+                "text": "No help available"
               },
               "properties": {
                 "id": "",
                 "kind": "",
                 "name": "",
                 "problem": {
-                  "severity": "error"
+                  "severity": "recommendation"
                 },
-                "problem.severity": "error",
-                "security-severity": "9.0"
+                "problem.severity": "recommendation",
+                "security-severity": "1.0"
               }
             },
             {
-              "id": "shift_exponent",
+              "id": "unknown_rule",
               "name": "Invalid Shift",
               "shortDescription": {
                 "text": "Invalid Shift"
@@ -58,57 +58,9 @@
       },
       "results": [
         {
-          "ruleId": "heap_buffer_overflow",
+          "ruleId": "unknown_rule",
           "message": {
-            "text": "Heap Buffer Overflow found in line 18, column 11"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "src/explore_me2.cpp"
-                },
-                "region": {
-                  "startLine": 18,
-                  "endLine": 18,
-                  "startColumn": 11,
-                  "endColumn": 11
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "dangerous_peafowl"
-          }
-        },
-        {
-          "ruleId": "shift_exponent",
-          "message": {
-            "text": "Invalid Shift found in line 13, column 11"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "src/explore_me2.cpp"
-                },
-                "region": {
-                  "startLine": 13,
-                  "endLine": 13,
-                  "startColumn": 11,
-                  "endColumn": 11
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "elegant_polecat"
-          }
-        },
-        {
-          "ruleId": "heap_buffer_overflow",
-          "message": {
-            "text": "Heap Buffer Overflow found in line 18, column 11"
+            "text": "Unspecified Finding found in line 18, column 11"
           },
           "locations": [
             {
@@ -126,7 +78,7 @@
             }
           ],
           "partialFingerprints": {
-            "primaryLocationLineHash": "zealous_shark"
+            "primaryLocationLineHash": "poetic_crow"
           }
         },
         {
@@ -150,7 +102,7 @@
             }
           ],
           "partialFingerprints": {
-            "primaryLocationLineHash": "odd_starfish"
+            "primaryLocationLineHash": "mystical_seahorse"
           }
         },
         {
