@@ -152,6 +152,16 @@
           "partialFingerprints": {
             "primaryLocationLineHash": "odd_starfish"
           }
+        },
+        {
+          "ruleId": "shift_exponent",
+          "message": {
+            "text": "Invalid Shift found"
+          },
+          "locations": [],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "even_starfish"
+          }
         }
       ]
     }
